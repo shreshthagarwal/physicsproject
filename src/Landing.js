@@ -12,10 +12,10 @@ const Landing = () => {
                 <div className="title">
                     <div className="title-inner">
                         <div className="cafe">
-                            <div className="cafe-inner"><span className="title-s">S</span>urface Tension</div>
+                            <div className="cafe-inner">Surface Tension</div>
                         </div>
                         <div className="mozart">
-                            <div className="mozart-inner">By <span className="title-s">S</span>hreshth Agarwal</div>
+                            <div className="mozart-inner">By Shreshth Agarwal</div>
                         </div>
                     </div>
                 </div>

@@ -133,7 +133,7 @@ h1 {
 }
 
 /* responsive */
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 1000px) {
 	header {
 		padding: 30px 30px 50px 30px;
 	}
@@ -147,11 +147,31 @@ h1 {
 	}
 
 	h1 {
-		font-size: 1.5em;
+		font-size: 3.5em;
 	}
 
 	.image {
-		width: 200px;
+		margin-left: 100px;
+		grid-row: 1;
+		grid-column: 1;
+		opacity: 0.7;
+		animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 2s backwards;
+	}
+
+	.mainpage-img {
+		display: block;
+		width: 450px;
+		height: auto;
+	}
+	.cafe-inner {
+		font-size: 2em;
+		display: inline-block;
+		animation: inner-left 1s 1s ease both, text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+	}
+
+	.mozart-inner {
+		font-size: 2em;
+		animation: text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
 	}
 }
 
