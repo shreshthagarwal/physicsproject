@@ -1,0 +1,331 @@
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font: 400 16px helvetica, sans-serif;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+
+h1 {
+	font-family: 'Odibee Sans', cursive;
+}
+
+p {
+	font-family: 'Titillium Web', sans-serif;
+	padding: 0 30px;
+}
+
+.landing {
+	padding-top: 250px;
+	height: 100vh;
+}
+
+header {
+	text-align: center;
+	padding: 50px 0 90px 0;
+	background: #ede8e2;
+}
+
+/* angled div */
+.slanted-div {
+	position: relative;
+	padding: 200px 0;
+	background: #f74949;
+	overflow: visible;
+	z-index: 1;
+}
+
+.slanted-div:before,
+.slanted-div:after {
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: inherit;
+	z-index: -1;
+	top: 0;
+	transform-origin: left top;
+	transform: skewY(-3deg);
+}
+
+.slanted-div:after {
+	bottom: 0;
+	transform-origin: left bottom;
+	transform: skewY(3deg);
+}
+
+/* angled div */
+.slanted-div1 {
+	position: relative;
+	padding: 200px 0;
+	background: #ede8e2;
+	overflow: visible;
+	z-index: 1;
+}
+
+.slanted-div-1 {
+	color: black;
+}
+
+.slanted-div1:before,
+.slanted-div1:after {
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: inherit;
+	z-index: -1;
+	top: 0;
+	transform-origin: right top;
+	transform: skewY(-3deg);
+}
+
+.slanted-div1:after {
+	bottom: 0;
+	transform-origin: right bottom;
+	transform: skewY(3deg);
+}
+
+/* displays the content inside, as these settings in the parent breaks the effect */
+.slanted-div2 div {
+	text-align: center;
+	font-size: 1.5em;
+	line-height: 1.5;
+}
+
+/* displays the content inside, as these settings in the parent breaks the effect */
+.slanted-div1 div {
+	text-align: center;
+	font-size: 1.5em;
+	line-height: 1.5;
+}
+
+/* displays the content inside, as these settings in the parent breaks the effect */
+.slanted-div div {
+	text-align: center;
+	font-size: 1.5em;
+	line-height: 1.5;
+}
+
+footer {
+	color: #999;
+	text-align: center;
+	padding: 100px 0 50px 0;
+	background: #080808;
+	font-size: 25px;
+	font-style: normal;
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 2em;
+	font-weight: 400;
+	margin: 0;
+}
+
+/* responsive */
+@media only screen and (max-width: 720px) {
+	header {
+		padding: 30px 30px 50px 30px;
+	}
+
+	.slanted-div {
+		padding: 100px 0;
+	}
+
+	footer {
+		padding: 65px 0 50px 0;
+	}
+
+	h1 {
+		font-size: 1.5em;
+	}
+}
+
+* {
+	position: relative;
+	box-sizing: border-box;
+}
+
+.iframely-embed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 50;
+	background: white;
+}
+
+#app {
+	z-index: 100;
+}
+
+#app {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	align-items: center;
+	padding-bottom: 4vmin;
+	height: 90vh;
+	width: 100%;
+	background: #ede8e2;
+	color: #3a3535;
+}
+
+body {
+	display: grid;
+	padding: 3vmin;
+	background: #e6ded7;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+
+.title {
+	padding-left: -20em;
+	grid-column: 1 / -1;
+	grid-row: 1;
+
+	font-family: "Prata", serif;
+	font-size: 4vw;
+	width: 100%;
+	z-index: 2;
+}
+
+.title-inner {
+	display: inline-block;
+}
+
+@keyframes text-clip {
+	from {
+		clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+	}
+	to {
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	}
+}
+
+@keyframes outer-left {
+	from {
+		transform: translateX(50%);
+	}
+	to {
+		transform: none;
+	}
+}
+
+@keyframes inner-left {
+	from {
+		transform: translateX(-50%);
+	}
+	to {
+		transform: none;
+	}
+}
+
+.cafe,
+.mozart {
+	animation: outer-left 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
+}
+
+.title-inner {
+	display: inline-block;
+	animation: inner-left 1s 1s ease both;
+}
+
+.cafe-inner {
+	display: inline-block;
+	animation: inner-left 1s 1s ease both, text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+}
+
+.mozart-inner {
+	animation: text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+}
+
+.title {
+	animation: outer-left 1s 1s ease both;
+}
+
+.cafe-inner {
+	display: inline-block;
+}
+
+.mozart {
+	display: inline-block;
+}
+
+.image {
+	grid-row: 1;
+	grid-column: 2;
+	margin-left: -3rem;
+	opacity: 0.7;
+
+	animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 2s backwards;
+}
+@keyframes image-in {
+	from {
+		clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+	}
+	to {
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	}
+}
+
+.mainpage-img {
+	margin-left: 150px;
+	display: block;
+	width: 80%;
+	height: auto;
+}
+
+body:active * {
+	animation: none !important;
+}
+
+.image1 {
+	grid-row: 1;
+	grid-column: 2;
+	margin-left: -3rem;
+	opacity: 0.7;
+
+	animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 2s backwards;
+}
+@keyframes image-in {
+	from {
+		clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+	}
+	to {
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	}
+}
+
+.mainpage-img {
+	margin-left: 150px;
+	display: block;
+	width: 80%;
+	height: auto;
+}
+
+.link-p {
+	font-style: none;
+	color: blanchedalmond;
+}
+
+span {
+	font-size: 50px;
+}
+
+.beading-leaf {
+	display: inline;
+	width: 400px;
+	text-align: center;
+	margin-top: 20px;
+}
