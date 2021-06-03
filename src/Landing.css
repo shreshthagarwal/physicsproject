@@ -147,7 +147,7 @@ h1 {
 	}
 
 	h1 {
-		font-size: 3.5em;
+		font-size: 2em;
 	}
 
 	.image {
@@ -162,16 +162,6 @@ h1 {
 		display: block;
 		width: 450px;
 		height: auto;
-	}
-	.cafe-inner {
-		font-size: 2em;
-		display: inline-block;
-		animation: inner-left 1s 1s ease both, text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
-	}
-
-	.mozart-inner {
-		font-size: 2em;
-		animation: text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
 	}
 }
 
