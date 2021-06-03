@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/physicsproject/static/css/main.d413c180.chunk.css",
+    "main.css": "/physicsproject/static/css/main.b82acde6.chunk.css",
     "main.js": "/physicsproject/static/js/main.7706745a.chunk.js",
     "main.js.map": "/physicsproject/static/js/main.7706745a.chunk.js.map",
     "runtime-main.js": "/physicsproject/static/js/runtime-main.485c40f2.js",
@@ -8,13 +8,13 @@
     "static/js/2.cdd73524.chunk.js": "/physicsproject/static/js/2.cdd73524.chunk.js",
     "static/js/2.cdd73524.chunk.js.map": "/physicsproject/static/js/2.cdd73524.chunk.js.map",
     "index.html": "/physicsproject/index.html",
-    "static/css/main.d413c180.chunk.css.map": "/physicsproject/static/css/main.d413c180.chunk.css.map",
+    "static/css/main.b82acde6.chunk.css.map": "/physicsproject/static/css/main.b82acde6.chunk.css.map",
     "static/js/2.cdd73524.chunk.js.LICENSE.txt": "/physicsproject/static/js/2.cdd73524.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.485c40f2.js",
     "static/js/2.cdd73524.chunk.js",
-    "static/css/main.d413c180.chunk.css",
+    "static/css/main.b82acde6.chunk.css",
     "static/js/main.7706745a.chunk.js"
   ]
 }
